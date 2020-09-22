@@ -38,4 +38,9 @@ rownames(NewDF) <- NULL
 colnames(NewDF) <- c("Time","Open","Close","POpen","Pclose")
 NewDF
 
-ggplot(NewDF,aes(x=factor(Time),y=Close,group=1)) + geom_line(clour="steelblue1",size=1) + geom_point(colour="steelblue",size=3) +geom_line(aes(y=Open),colour="tomato2",size=1) + geom_point(aes(y=Open),colour="red",size=6) + theme_bw()
+ggplot(NewDF,aes(x=factor(Time),y=Close,group=1)) + 
+geom_line(clour="steelblue1",size=1) + 
+geom_point(colour="steelblue",size=3) +
+geom_line(aes(y=Open),colour="tomato2",size=1) + 
+geom_point(aes(y=Open),colour="red",size=6) + 
+theme_bw()
