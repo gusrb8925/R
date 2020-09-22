@@ -43,4 +43,3 @@ Graph <- ggplot(DF, aes(x=Provinces, y=Population,fill=Provinces)) + geom_bar(st
 Graph
 
 write.csv(DF,"example_population_f.csv")
-                 
