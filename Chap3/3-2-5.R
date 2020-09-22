@@ -41,3 +41,5 @@ library("ggplot2")
 library("ggthemes")
 Graph <- ggplot(DF, aes(x=Provinces, y=Population,fill=Provinces)) + geom_bar(stat="identity") + theme_wsj()
 Graph
+
+write.csv(DF,"example_population_f.csv")
