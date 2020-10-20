@@ -11,7 +11,6 @@ combinations(3,2,name)
 
 combinations(3,2,name,repeats.allowed=T)
 
-
 dbinom(9,10000,0.0009)
 
 a <- dgeom(1:10, 0.2)
