@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\alteryx\data\9장-1.실습데이터\2016년 시군구 인구.xlsx|||`2016년 시군구 인구$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2016년 시군구 인구.xlsx
+Table=`2016년 시군구 인구$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="시도" size="255" source="File: C:\alteryx\data\9장-1.실습데이터\2016년 시군구 인구.xlsx|||`2016년 시군구 인구$`" type="V_WString" />
+            <Field name="시군구" size="255" source="File: C:\alteryx\data\9장-1.실습데이터\2016년 시군구 인구.xlsx|||`2016년 시군구 인구$`" type="V_WString" />
+            <Field name="인구" source="File: C:\alteryx\data\9장-1.실습데이터\2016년 시군구 인구.xlsx|||`2016년 시군구 인구$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="246" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="시도" />
+          <DataField field="시군구" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="강원도" size="2048" source="CrossTab:Header:시도:강원도:Concat:" type="V_WString" />
+            <Field name="경기도" size="2048" source="CrossTab:Header:시도:경기도:Concat:" type="V_WString" />
+            <Field name="경상남도" size="2048" source="CrossTab:Header:시도:경상남도:Concat:" type="V_WString" />
+            <Field name="경상북도" size="2048" source="CrossTab:Header:시도:경상북도:Concat:" type="V_WString" />
+            <Field name="광주광역시" size="2048" source="CrossTab:Header:시도:광주광역시:Concat:" type="V_WString" />
+            <Field name="대구광역시" size="2048" source="CrossTab:Header:시도:대구광역시:Concat:" type="V_WString" />
+            <Field name="대전광역시" size="2048" source="CrossTab:Header:시도:대전광역시:Concat:" type="V_WString" />
+            <Field name="부산광역시" size="2048" source="CrossTab:Header:시도:부산광역시:Concat:" type="V_WString" />
+            <Field name="서울특별시" size="2048" source="CrossTab:Header:시도:서울특별시:Concat:" type="V_WString" />
+            <Field name="세종특별자치시" size="2048" source="CrossTab:Header:시도:세종특별자치시:Concat:" type="V_WString" />
+            <Field name="울산광역시" size="2048" source="CrossTab:Header:시도:울산광역시:Concat:" type="V_WString" />
+            <Field name="인천광역시" size="2048" source="CrossTab:Header:시도:인천광역시:Concat:" type="V_WString" />
+            <Field name="전라남도" size="2048" source="CrossTab:Header:시도:전라남도:Concat:" type="V_WString" />
+            <Field name="전라북도" size="2048" source="CrossTab:Header:시도:전라북도:Concat:" type="V_WString" />
+            <Field name="제주특별자치도" size="2048" source="CrossTab:Header:시도:제주특별자치도:Concat:" type="V_WString" />
+            <Field name="충청남도" size="2048" source="CrossTab:Header:시도:충청남도:Concat:" type="V_WString" />
+            <Field name="충청북도" size="2048" source="CrossTab:Header:시도:충청북도:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="246" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="시도" />
+          <DataField field="인구" />
+          <Methods>
+            <Method method="Sum" />
+            <Method method="Count" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_강원도" source="CrossTab:Header:시도:강원도:Sum:" type="Double" />
+            <Field name="Count_강원도" source="CrossTab:Header:시도:강원도:CountNonNulls:" type="Double" />
+            <Field name="Sum_경기도" source="CrossTab:Header:시도:경기도:Sum:" type="Double" />
+            <Field name="Count_경기도" source="CrossTab:Header:시도:경기도:CountNonNulls:" type="Double" />
+            <Field name="Sum_경상남도" source="CrossTab:Header:시도:경상남도:Sum:" type="Double" />
+            <Field name="Count_경상남도" source="CrossTab:Header:시도:경상남도:CountNonNulls:" type="Double" />
+            <Field name="Sum_경상북도" source="CrossTab:Header:시도:경상북도:Sum:" type="Double" />
+            <Field name="Count_경상북도" source="CrossTab:Header:시도:경상북도:CountNonNulls:" type="Double" />
+            <Field name="Sum_광주광역시" source="CrossTab:Header:시도:광주광역시:Sum:" type="Double" />
+            <Field name="Count_광주광역시" source="CrossTab:Header:시도:광주광역시:CountNonNulls:" type="Double" />
+            <Field name="Sum_대구광역시" source="CrossTab:Header:시도:대구광역시:Sum:" type="Double" />
+            <Field name="Count_대구광역시" source="CrossTab:Header:시도:대구광역시:CountNonNulls:" type="Double" />
+            <Field name="Sum_대전광역시" source="CrossTab:Header:시도:대전광역시:Sum:" type="Double" />
+            <Field name="Count_대전광역시" source="CrossTab:Header:시도:대전광역시:CountNonNulls:" type="Double" />
+            <Field name="Sum_부산광역시" source="CrossTab:Header:시도:부산광역시:Sum:" type="Double" />
+            <Field name="Count_부산광역시" source="CrossTab:Header:시도:부산광역시:CountNonNulls:" type="Double" />
+            <Field name="Sum_서울특별시" source="CrossTab:Header:시도:서울특별시:Sum:" type="Double" />
+            <Field name="Count_서울특별시" source="CrossTab:Header:시도:서울특별시:CountNonNulls:" type="Double" />
+            <Field name="Sum_세종특별자치시" source="CrossTab:Header:시도:세종특별자치시:Sum:" type="Double" />
+            <Field name="Count_세종특별자치시" source="CrossTab:Header:시도:세종특별자치시:CountNonNulls:" type="Double" />
+            <Field name="Sum_울산광역시" source="CrossTab:Header:시도:울산광역시:Sum:" type="Double" />
+            <Field name="Count_울산광역시" source="CrossTab:Header:시도:울산광역시:CountNonNulls:" type="Double" />
+            <Field name="Sum_인천광역시" source="CrossTab:Header:시도:인천광역시:Sum:" type="Double" />
+            <Field name="Count_인천광역시" source="CrossTab:Header:시도:인천광역시:CountNonNulls:" type="Double" />
+            <Field name="Sum_전라남도" source="CrossTab:Header:시도:전라남도:Sum:" type="Double" />
+            <Field name="Count_전라남도" source="CrossTab:Header:시도:전라남도:CountNonNulls:" type="Double" />
+            <Field name="Sum_전라북도" source="CrossTab:Header:시도:전라북도:Sum:" type="Double" />
+            <Field name="Count_전라북도" source="CrossTab:Header:시도:전라북도:CountNonNulls:" type="Double" />
+            <Field name="Sum_제주특별자치도" source="CrossTab:Header:시도:제주특별자치도:Sum:" type="Double" />
+            <Field name="Count_제주특별자치도" source="CrossTab:Header:시도:제주특별자치도:CountNonNulls:" type="Double" />
+            <Field name="Sum_충청남도" source="CrossTab:Header:시도:충청남도:Sum:" type="Double" />
+            <Field name="Count_충청남도" source="CrossTab:Header:시도:충청남도:CountNonNulls:" type="Double" />
+            <Field name="Sum_충청북도" source="CrossTab:Header:시도:충청북도:Sum:" type="Double" />
+            <Field name="Count_충청북도" source="CrossTab:Header:시도:충청북도:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DATA83~1\AppData\Local\Temp\Engine_15092_b2f56517399e4ad9aac0e6bdf76dc1e4_\Engine_3900_3c95106cf5214dfa94884373078d9950_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="474" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DATA83~1\AppData\Local\Temp\Engine_15092_b2f56517399e4ad9aac0e6bdf76dc1e4_\Engine_3900_ad7f84b97b054024ba8814faf41eaf75_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="354" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Count_강원도" selected="True" rename="강원도_시군구수" />
+            <SelectField field="Sum_강원도" selected="True" rename="강원도_인구수" />
+            <SelectField field="Count_경기도" selected="True" rename="경기도_시군구수" />
+            <SelectField field="Sum_경기도" selected="True" rename="경기도_인구수" />
+            <SelectField field="Count_경상남도" selected="True" rename="경상남도_시군구수" />
+            <SelectField field="Sum_경상남도" selected="True" rename="경상남도_인구수" />
+            <SelectField field="Count_경상북도" selected="True" rename="경상북도_시군구수" />
+            <SelectField field="Sum_경상북도" selected="True" rename="경상북도_인구수" />
+            <SelectField field="Count_광주광역시" selected="True" rename="광주광역시_시군구수" />
+            <SelectField field="Sum_광주광역시" selected="True" rename="광주광역시_인구수" />
+            <SelectField field="Count_대구광역시" selected="True" rename="대구광역시_시군구수" />
+            <SelectField field="Sum_대구광역시" selected="True" rename="대구광역시_인구수" />
+            <SelectField field="Count_대전광역시" selected="True" rename="대전광역시_시군구수" />
+            <SelectField field="Sum_대전광역시" selected="True" rename="대전광역시_인구수" />
+            <SelectField field="Count_부산광역시" selected="True" rename="부산광역시_시군구수" />
+            <SelectField field="Sum_부산광역시" selected="True" rename="부산광역시_인구수" />
+            <SelectField field="Count_서울특별시" selected="True" rename="서울특별시_시군구수" />
+            <SelectField field="Sum_서울특별시" selected="True" rename="서울특별시_인구수" />
+            <SelectField field="Count_세종특별자치시" selected="True" rename="세종특별자치시_시군구수" />
+            <SelectField field="Sum_세종특별자치시" selected="True" rename="세종특별자치시_인구수" />
+            <SelectField field="Count_울산광역시" selected="True" rename="울산광역시_시군구수" />
+            <SelectField field="Sum_울산광역시" selected="True" rename="울산광역시_인구수" />
+            <SelectField field="Count_인천광역시" selected="True" rename="인천광역시_시군구수" />
+            <SelectField field="Sum_인천광역시" selected="True" rename="인천광역시_인구수" />
+            <SelectField field="Count_전라남도" selected="True" rename="전라남도_시군구수" />
+            <SelectField field="Sum_전라남도" selected="True" rename="전라남도_인구수" />
+            <SelectField field="Count_전라북도" selected="True" rename="전라북도_시군구수" />
+            <SelectField field="Sum_전라북도" selected="True" rename="전라북도_인구수" />
+            <SelectField field="Count_제주특별자치도" selected="True" rename="제주특별자치도_시군구수" />
+            <SelectField field="Sum_제주특별자치도" selected="True" rename="제주특별자치도_인구수" />
+            <SelectField field="Count_충청남도" selected="True" rename="충청남도_시군구수" />
+            <SelectField field="Sum_충청남도" selected="True" rename="충청남도_인구수" />
+            <SelectField field="Count_충청북도" selected="True" rename="충청북도_시군구수" />
+            <SelectField field="Sum_충청북도" selected="True" rename="충청북도_인구수" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>알투7</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

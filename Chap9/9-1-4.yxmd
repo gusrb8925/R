@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\alteryx\data\9장-1.실습데이터\CA_Entities.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CA_Entities.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Entity Name" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+            <Field name="Entity ID" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="Double" />
+            <Field name="Entity Type" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+            <Field name="County Name" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+            <Field name="Zip" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+            <Field name="Fiscal Year End" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+            <Field name="Paper Report Due Date" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+            <Field name="Electronic Report Due Date" size="255" source="File: C:\Users\pwonson\Downloads\PR_EachDataSet.xlsx|`PR_ENTITIES$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CA_Pension_Funding_Data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Entity Name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Entity ID" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Fiscal Year" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="System ID" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Valuation Date" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Name of Actuary" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Actuarial Accrued Liability_Funding Position" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Actuarial Value of Assets" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Unfunded Actuarial Accrued Liability (UAAL)" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Funded Ratio (Rounded to Nearest Tenth, Example: 99.9) (%)" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Annual Covered Payroll_Funding Position" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="UAAL as a Percenrate of ACP (%)" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Select Method Used to Determine Actuarial Accrued Liability" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+            <Field name="Please Specifiy Other Method" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\CA_Pension_Funding_Data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Entity ID" selected="True" type="V_String" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="366" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Entity ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Entity ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Entity Name" selected="True" rename="Right_Entity Name" input="Right_" />
+                <SelectField field="Right_Entity ID" selected="True" rename="Right_Entity ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DATA83~1\AppData\Local\Temp\Engine_8208_bdb4477926d94b779ffa5dec221241f9_\Engine_3900_25ee88febcd845ca93db363fa9c2f063_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DATA83~1\AppData\Local\Temp\Engine_8208_bdb4477926d94b779ffa5dec221241f9_\Engine_3900_02c10f2457614ea89f681881d0533e6d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DATA83~1\AppData\Local\Temp\Engine_8208_bdb4477926d94b779ffa5dec221241f9_\Engine_3900_f0fa8045eff24356a7fa5e347fc6c849_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Left" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Right" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>알투4</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>san-francisco-2012.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Job Title" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Base Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Overtime Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Other Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Total Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Notes" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+            <Field name="Agency" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>san-francisco-2013.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="employee_name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="job_title" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="base_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="overtime_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="other_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="total_benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="total_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="total_pay_benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="year" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="notes" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="jurisdiction_name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>san-francisco-2011.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Job Title" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Base Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Overtime Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Other Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Total Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Notes" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+            <Field name="Agency" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="246" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByPos</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="1" />
+                <Field name="Job Title" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="2" />
+                <Field name="Base Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="3" />
+                <Field name="Overtime Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="4" />
+                <Field name="Other Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="5" />
+                <Field name="Benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="6" />
+                <Field name="Total Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="7" />
+                <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="8" />
+                <Field name="Year" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="9" />
+                <Field name="Notes" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="10" />
+                <Field name="Agency" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2012.csv" type="V_String" column="11" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="1" />
+                <Field name="Job Title" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="2" />
+                <Field name="Base Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="3" />
+                <Field name="Overtime Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="4" />
+                <Field name="Other Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="5" />
+                <Field name="Benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="6" />
+                <Field name="Total Pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="7" />
+                <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="8" />
+                <Field name="Year" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="9" />
+                <Field name="Notes" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="10" />
+                <Field name="Agency" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2011.csv" type="V_String" column="11" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#3">
+              <RecordInfo>
+                <Field name="employee_name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="1" />
+                <Field name="job_title" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="2" />
+                <Field name="base_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="3" />
+                <Field name="overtime_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="4" />
+                <Field name="other_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="5" />
+                <Field name="total_benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="6" />
+                <Field name="total_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="7" />
+                <Field name="total_pay_benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="8" />
+                <Field name="year" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="9" />
+                <Field name="notes" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="10" />
+                <Field name="jurisdiction_name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" column="11" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="354" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DATA83~1\AppData\Local\Temp\Engine_14420_f7bda45a87e84fabab5530a6559c91cc_\Engine_3900_b6242be8a70e46f59270be54071045bf_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>알투5</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

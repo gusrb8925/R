@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>san-francisco-2013.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="employee_name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="job_title" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="base_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="overtime_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="other_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="total_benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="total_pay" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="total_pay_benefits" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="year" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="notes" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="jurisdiction_name" size="254" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="222" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DATA83~1\AppData\Local\Temp\Engine_3316_29d6a3c2eead44df94167ea95cb9ebca_\Engine_3900_9a6501dc51d34100a022fbdc056a11f1_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="overtime_pay" selected="True" type="Double" size="8" />
+            <SelectField field="other_pay" selected="True" type="Double" size="8" />
+            <SelectField field="total_benefits" selected="True" type="Double" size="8" />
+            <SelectField field="total_pay" selected="True" type="Double" size="8" />
+            <SelectField field="total_pay_benefits" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="222" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="employee_name" selected="True" />
+            <Field field="job_title" selected="True" />
+            <Field field="base_pay" selected="True" />
+            <Field field="overtime_pay" selected="True" />
+            <Field field="other_pay" selected="True" />
+            <Field field="total_benefits" selected="True" />
+            <Field field="total_pay" selected="True" />
+            <Field field="total_pay_benefits" selected="True" />
+            <Field field="year" selected="True" />
+            <Field field="notes" selected="True" />
+            <Field field="jurisdiction_name" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="employee_name" size="39" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="job_title" size="30" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="V_String" />
+            <Field name="base_pay" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="Double" />
+            <Field name="overtime_pay" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="Double" />
+            <Field name="other_pay" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="Double" />
+            <Field name="total_benefits" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="Double" />
+            <Field name="total_pay" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="Double" />
+            <Field name="total_pay_benefits" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="Double" />
+            <Field name="year" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="Int16" />
+            <Field name="notes" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="Bool" />
+            <Field name="jurisdiction_name" size="13" source="File: C:\alteryx\data\9장-1.실습데이터\san-francisco-2013.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="notes" selected="True" type="V_WString" size="1" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>알투2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
